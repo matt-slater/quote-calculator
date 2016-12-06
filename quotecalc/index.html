@@ -1,0 +1,129 @@
+<html>
+
+<head>
+	<title>Pet Chauffeur Quote Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="js/mapStyle.js"></script>
+	<script src="js/quote.js"></script>
+
+
+</head>
+
+<body onload="initialize()">
+	<div id="main">
+
+		<div id="header_title">
+			<img src="img/logo.png" style="float: left; margin-top: 7px; margin-right:5px;" />
+			<div style="padding-left: 5px">
+				<h1>QUOTE CALCULATOR</h1>
+			</div>
+		</div>
+
+
+
+
+		<div id="form">
+
+			<div id="holder">
+				<div id="butts">
+					<input type="text" name="pickup" placeholder="Origin" id="pickup" onkeydown="if (event.keyCode == 13) document.getElementById('xxx').click()" />
+				</div>
+				<div id="asses">
+					<input type="text" name="dropoff" id="dropoff" placeholder="Destination" onkeydown="if (event.keyCode == 13) document.getElementById('xxx').click()" />
+				</div>
+			</div>
+
+			<label for="m2m">Manhattan to Manhattan</label>
+			<input type="checkbox" name="m2m" id="m2m" value="m2m" checked>
+			<label for="outsideNYC">Origin is outside Manhattan</label>
+			<input type="checkbox" name="outsideNYC" id="check" value="outsideNYC">
+			<label for="afterHours">After Hours?</label>
+			<input type="checkbox" name="afterHours" id="afterHours" value="afterHours">
+
+			<br>
+			<button id="xxx" onclick="calcRoute()">Calculate Quote</button>
+
+
+			<!------
+
+			<div id="quoteDetails">
+
+				<div id="d">
+					<input type="text" placeholder="Distance" name="distance" id="distance" readonly="true" />
+				</div>
+				<div id="duration">
+					<input type="text" name="time" id="time" placeholder="Duration" readonly="true" />
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="column">Pricing</div>
+				</div>
+				<div class="row">
+					<div class="column">Base Fare:</div>
+					<div id="baseFare" class="column">$0</div>
+				</div>
+				<div class="row">
+					<div class="column">Tip:</div>
+					<div id="tip" class="column">$0</div>
+				</div>
+				<div class="row">
+					<div class="column">Estimated Tolls:</div>
+					<div id="tolls" class="column">$0</div>
+				</div>
+				<div class="row">
+					<div class="column">Total Fare:</div>
+					<div id="totalFare" class="column">$0</div>
+				</div>
+
+
+			</div>
+
+------>
+
+			<table>
+				<tr>
+					<th colspan="2">QUOTE INFO</td>
+				</tr>
+				<tr>
+					<td>Distance</td>
+					<td id="distance">0 mi</td>
+				</tr>
+				<tr>
+					<td>Duration</td>
+					<td id="time">0 mins</td>
+				</tr>
+				<tr>
+					<td>Base Fare</td>
+					<td id="baseFare">$0</td>
+				</tr>
+				<tr>
+					<td>Tip</td>
+					<td id="tip">$0</td>
+				</tr>
+				<tr>
+					<td>Estimated Tolls</td>
+					<td id="tolls">$0</td>
+				</tr>
+				<tr>
+					<td>Estimated Total Fare</td>
+					<td id="totalFare">$0</td>
+				</tr>
+			</table>
+
+			<div></div>
+
+
+		</div>
+
+
+		<div id="map_canvas"></div>
+		<div></div>
+	</div>
+
+</body>
+
+</html>

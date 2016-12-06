@@ -1,0 +1,174 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
+body {
+	background-color: #33CCFF;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+#main {
+	background-color: white;
+	padding: 20px;
+	margin: 25px;
+	border-radius: 7px;
+}
+
+#map_canvas {
+	height: 60%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C4CBCF;
+}
+
+#header_title {}
+
+#quote_holder {
+	width: 1%;
+	text-align: right;
+	text-shadow: 2px 2px 8px #D0D0D0;
+	font-size: 73;
+	font-stretch: expanded;
+	color: chartreuse;
+}
+
+#form {
+	background-color: #F6F6F6;
+	padding: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C4CBCF;
+	border-bottom: none;
+	text-align: center;
+}
+
+input[type=text] {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid gray;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font: normal 16px/normal Arial, Helvetica, sans-serif;
+	text-align: center;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	letter-spacing: 1px;
+	width: 95%
+}
+
+#quoteDetails {
+	display: flex;
+}
+
+#d {
+	float: left;
+	width: 50%;
+}
+
+#duration {
+	float: left;
+	width: 50%;
+}
+
+#xxx {
+	-webkit-border-radius: 3;
+	-moz-border-radius: 3;
+	border-radius: 3px;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 16px;
+	background: #ff9933;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	margin: 10px;
+}
+
+#xxx:hover {
+	background: #ff8833;
+	text-decoration: none;
+}
+
+#holder {
+	overflow: visible;
+}
+
+#butts {
+	float: left;
+	width: 50%;
+}
+
+#asses {
+	float: left;
+	width: 50%;
+}
+
+.container {
+	display: table;
+	width: 100%;
+}
+
+.container div {
+	background-color: red;
+}
+
+.row {
+	display: table-row;
+	width: 50%;
+}
+
+.column {
+	display: table-cell;
+	width: 50%;
+}
+
+table {
+	width: 100%;
+	margin-bottom: 7px;
+}
+
+table,
+th,
+td {
+	padding: 10px;
+	border-collapse: collapse;
+	border: 1px solid gray;
+}
+
+tr:hover {
+	background-color: darkgray;
+}
+
+#distance,
+#time,
+#tip,
+#tolls,
+#totalFare {
+	color: white;
+}
+
+#distance {
+	background-color: #ff9933;
+}
+
+#time {
+	background-color: #ff9933;
+}
+
+#baseFare {
+	color: white;
+	background-color: #ff9933;
+	font-weight: 700;
+}
+
+#tolls {
+	background-color: #ff9933;
+}
+
+#tip {
+	background-color: #ff9933;
+}
+
+#totalFare {
+	background-color: #ff9933;
+}
